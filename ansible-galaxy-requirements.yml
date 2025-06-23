@@ -1,0 +1,19 @@
+roles:
+  - geerlingguy.node_exporter,2.1.0
+  - geerlingguy.docker,7.4.6
+# Only set minimum versions for collections as ansible package comes with these built in
+collections:
+  - name: google.cloud
+    version: ">=1.1.2"
+  - name: amazon.aws
+    version: ">=10.1.0"
+  - name: community.aws
+    version: ">=10.0.0"
+  - name: azure.azcollection
+    version: ">=2.0"
+  - name: kubernetes.core
+    version: ">=5.0"
+  - name: community.postgresql
+    version: ">=3.0"
+  - name: community.docker
+    version: ">=3.0"
