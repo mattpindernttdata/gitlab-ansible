@@ -1,7 +1,3 @@
-###########################################
-# To update list build Dockerfile.python_pkgs and run container to get list
-# docker build --platform linux/amd64 --pull --no-cache -t get-pkgs:host -f Dockerfile.python_pkgs_host . && docker run -it --rm --platform linux/amd64 get-pkgs:host
-###########################################
 adal==1.2.7
 aiohappyeyeballs==2.6.1
 aiohttp==3.12.12
@@ -17,30 +13,3 @@ bcrypt==4.3.0
 boto3==1.38.35
 botocore==1.38.35
 cachetools==5.5.2
-certifi==2025.4.26
-cffi==1.17.1
-charset-normalizer==3.4.2
-cryptography==44.0.3
-distro==1.9.0
-durationpy==0.10
-frozenlist==1.7.0
-google-auth==2.40.3
-h11==0.16.0
-h2==4.2.0
-hpack==4.1.0
-httpcore==1.0.9
-httpx==0.28.1
-humanfriendly==10.0
-hyperframe==6.1.0
-idna==3.10
-importlib_metadata==8.7.0
-isodate==0.7.2
-Jinja2==3.1.6
-jmespath==1.0.1
-knack==0.11.0
-kubernetes==33.1.0
-MarkupSafe==3.0.2
-microsoft-kiota-abstractions==1.9.3
-microsoft-kiota-authentication-azure==1.9.3
-microsoft-kiota-http==1.9.3
-microsoft-kiota-serialization-json==1.9.3
