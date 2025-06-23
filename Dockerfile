@@ -13,7 +13,7 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-RUN curl "https://s3.amazonaws.com/session-manager-downloads/plugin/latest/ubuntu_64bit/session-manager-plugin.deb" -o "session-manager-plugin.deb" &&\ 
+RUN curl "https://s3.amazonaws.com/session-manager-downloads/plugin/latest/ubuntu_64bit/session-manager-plugin.deb" -o "session-manager-plugin.deb" && \
     dpkg -i session-manager-plugin.deb && \
     rm -f session-manager-plugin.deb
 
@@ -35,7 +35,6 @@ RUN /opt/ansible-venv/bin/ansible-galaxy install -r /tmp/ansible-galaxy-requirem
 ENV PATH="/opt/ansible-venv/bin:${PATH}"
 
 RUN apt-get purge -y --auto-remove curl unzip && \
-
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
