@@ -1,5 +1,5 @@
 FROM alpine:latest
 
-COPY python.tar.gz /tmp
+COPY Python-3.10.13.tgz /tmp
 
 ENTRYPOINT ["/bin/sh"]
