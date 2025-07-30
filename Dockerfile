@@ -1,5 +1,5 @@
 FROM alpine:latest
 
-COPY postgresql-client-16.deb /tmp
+COPY trivy_0.41.0_Linux-64bit.deb /tmp
 
 ENTRYPOINT ["/bin/sh"]
